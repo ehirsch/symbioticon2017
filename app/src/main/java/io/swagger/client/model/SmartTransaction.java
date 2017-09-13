@@ -18,6 +18,8 @@ public class SmartTransaction extends GiroTransaction {
     @SerializedName("answers")
     private List<Boolean> answers = new ArrayList<>();
 
+    private transient String customInfoText = null;
+
     public SmartTransaction(GiroTransaction t) {
         setId(t.getId());
         setType(t.getType());
@@ -63,8 +65,15 @@ public class SmartTransaction extends GiroTransaction {
         return sb.toString();
     }
 
+    public void setCustomInfoText(String customInfoText) {
+        this.customInfoText = customInfoText;
+    }
 
     public CharSequence getInfoText() {
+
+        if(customInfoText != null) {
+            return customInfoText;
+        }
 
         StringBuilder b = new StringBuilder().append("Du hast ")
                 .append(StringUtils.getAmountBigPart(Math.abs(getAmount().getValue())))

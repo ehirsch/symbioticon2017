@@ -1,5 +1,7 @@
 package com.yomo.templateapp.providers;
 
+import com.yomo.templateapp.utils.StringUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,9 +35,8 @@ public class MockBackendProvider implements ISmartTransactionProvider {
 
     private SmartTransaction getSmartcheckTransaction(GiroTransaction g) {
 
-        if(g.getCreditor().toLowerCase().indexOf("telefonica") >= 0 ||
-                g.getDebtor().toLowerCase().indexOf("telefonica") >= 0 ||
-                g.getPurpose().toLowerCase().indexOf("telefonica") >= 0) {
+        /*
+        if(g.getCreditor().toLowerCase().indexOf("telefonica") >= 0) {
 
             SmartTransaction t = new SmartTransaction(g);
 
@@ -43,6 +44,55 @@ public class MockBackendProvider implements ISmartTransactionProvider {
             questions.add("Hast Du diesen Vertrag beruflich genutzt?");
 
             t.setQuestions(questions);
+
+            return t;
+        }
+       */
+
+        //forget aout old dummy data
+        if(Math.abs(g.getAmount().getValue()) < 200) {
+            return null;
+        }
+
+
+        if(g.getCreditor().toLowerCase().indexOf("telekom") >= 0) {
+
+            SmartTransaction t = new SmartTransaction(g);
+
+            List<String> questions = new ArrayList<>();
+            questions.add("Nutzt Du Dein Smartphone für Deine Ausbildung?");
+
+            t.setQuestions(questions);
+
+            t.setCustomInfoText(
+                    new StringBuilder("Du hast monatlich ")
+                            .append(StringUtils.getAmountBigPart(Math.abs(g.getAmount().getValue())))
+                            .append(StringUtils.getAmountSmallPart(g.getAmount().getValue()))
+                            .append("€")
+                            .append(" an die ").append(g.getCreditor()).append(" überwiesen.")
+                            .toString()
+            );
+
+            return t;
+        }
+        else if(g.getCreditor().toLowerCase().indexOf("hofmann optik") >= 0) {
+
+            SmartTransaction t = new SmartTransaction(g);
+
+            List<String> questions = new ArrayList<>();
+            questions.add("Hast Du für die Brille ein ärztliches Attest gehabt?");
+            questions.add("Brauchst Du die Brille für Deinen Beruf z.B. als Schutz- oder Arbeitsplatzbrille?");
+
+            t.setQuestions(questions);
+
+            t.setCustomInfoText(
+                    new StringBuilder("Du hast ")
+                            .append(StringUtils.getAmountBigPart(Math.abs(g.getAmount().getValue())))
+                            .append(StringUtils.getAmountSmallPart(g.getAmount().getValue()))
+                            .append("€")
+                            .append(" an ").append(g.getCreditor()).append(" überwiesen.")
+                            .toString()
+            );
 
             return t;
         }
