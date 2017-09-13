@@ -81,7 +81,7 @@ public class SmartcheckActivity extends AppCompatActivity {
 		public View getView(int position, View convertView, ViewGroup parent) {
 
 			if (convertView == null || convertView.findViewById(R.id.transactionContainer) == null) {
-				convertView = LayoutInflater.from(getContext()).inflate(R.layout.transaction_item, parent, false);
+				convertView = LayoutInflater.from(getContext()).inflate(R.layout.smart_transaction_item, parent, false);
 			}
 
 			GiroTransaction t = (GiroTransaction) getItem(position);

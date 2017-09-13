@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="smartcheck" />
+        android:text="" />
 
     <TextView
         android:id="@+id/smartcheck_start_info_text"
