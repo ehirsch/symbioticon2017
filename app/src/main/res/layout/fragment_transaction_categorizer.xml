@@ -19,58 +19,32 @@
             style="@style/ActivityTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kurze Frage zu"/>
+            android:text="Kurze Frage…" />
 
 
-        <EditText
-            android:id="@+id/editText"
+        <TextView
+            android:id="@+id/transaction_info"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Antwort" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/smartcheck_card_btn_yes"
-                style="@style/overdraft_card_action"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/half_grid_unit"
-                android:layout_marginTop="@dimen/one_grid_unit"
-                android:layout_marginRight="@dimen/one_grid_unit"
-                android:layout_marginLeft="@dimen/one_grid_unit"
-                android:text="Ja" />
-
-            <TextView
-                android:id="@+id/smartcheck_card_btn_no"
-                style="@style/overdraft_card_action"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/half_grid_unit"
-                android:layout_marginTop="@dimen/one_grid_unit"
-                android:layout_marginRight="@dimen/one_grid_unit"
-                android:layout_marginLeft="@dimen/one_grid_unit"
-                android:text="Nein" />
-        </LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/feedbackBottomColor"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Transaction Information" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:baselineAligned="false">
 
             <TextView
-                android:id="@+id/transaction_title"
+                android:id="@+id/question"
                 style="@style/ActivityTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kurze Frage zu"/>
-
+                android:text="question" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -79,18 +53,31 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/amount_value"
+                    android:id="@+id/smartcheck_card_btn_yes"
+                    style="@style/overdraft_card_action"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2.234," />
+                    android:layout_marginBottom="@dimen/half_grid_unit"
+                    android:layout_marginLeft="@dimen/one_grid_unit"
+                    android:layout_marginRight="@dimen/one_grid_unit"
+                    android:layout_marginTop="@dimen/one_grid_unit"
+                    android:gravity="center"
+                    android:text="Ja" />
 
                 <TextView
-                    android:id="@+id/amount_value_decimal"
+                    android:id="@+id/smartcheck_card_btn_no"
+                    style="@style/overdraft_card_action"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="79" />
-
+                    android:layout_marginBottom="@dimen/half_grid_unit"
+                    android:layout_marginLeft="@dimen/one_grid_unit"
+                    android:layout_marginRight="@dimen/one_grid_unit"
+                    android:layout_marginTop="@dimen/one_grid_unit"
+                    android:gravity="center"
+                    android:text="Nein" />
             </LinearLayout>
+
+
         </LinearLayout>
 
 
@@ -102,7 +89,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center">
-
 
     </android.support.v4.widget.NestedScrollView>
 

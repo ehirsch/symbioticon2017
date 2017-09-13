@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.yomo.templateapp.R;
 import com.yomo.templateapp.activity.SmartcheckActivity;
 
+import org.w3c.dom.Text;
+
 import io.swagger.client.model.SmartTransaction;
 
 
@@ -55,12 +57,6 @@ public class TransactionCategorizerFragment extends Fragment {
         if (getArguments() != null) {
             smartcheckActivity = (SmartcheckActivity) getActivity();
             int transactionIndex = getArguments().getInt("transaction_index");
-
-            System.out.println("####################################################");
-            System.out.println("transactionIndex = " + transactionIndex);
-            System.out.println("####################################################");
-
-
             smartTransaction = smartcheckActivity.getItem(transactionIndex);
         }
     }
@@ -71,15 +67,25 @@ public class TransactionCategorizerFragment extends Fragment {
         // Inflate the layout for this fragment
         View inflate = inflater.inflate(R.layout.fragment_transaction_categorizer, container, false);
 
-        TextView transactionTitle = inflate.findViewById(R.id.transaction_title);
+        TextView transactionInfo = inflate.findViewById(R.id.transaction_info);
+        transactionInfo.setText(smartTransaction.getInfoText() );
 
-        transactionTitle.setText(smartTransaction.getQuestions().get(0));
+        TextView question = inflate.findViewById(R.id.question);
+        question.setText(smartTransaction.getQuestions().get(0));
 
         TextView yesButton = inflate.findViewById(R.id.smartcheck_card_btn_yes);
         yesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                smartcheckActivity.navigateToNext();
+                smartcheckActivity.navigateToNext(true);
+            }
+        });
+
+        TextView noButton = inflate.findViewById(R.id.smartcheck_card_btn_no);
+        noButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                smartcheckActivity.navigateToNext(false);
             }
         });
 

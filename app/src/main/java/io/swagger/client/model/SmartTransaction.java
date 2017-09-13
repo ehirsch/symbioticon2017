@@ -61,4 +61,9 @@ public class SmartTransaction extends GiroTransaction {
         sb.append("}");
         return sb.toString();
     }
+
+
+    public CharSequence getInfoText() {
+        return "TODO: Hier muss die Info rein!";
+    }
 }
