@@ -1,6 +1,7 @@
 package io.swagger.client.model;
 
 import com.google.gson.annotations.SerializedName;
+import com.yomo.templateapp.utils.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +65,13 @@ public class SmartTransaction extends GiroTransaction {
 
 
     public CharSequence getInfoText() {
-        return "TODO: Hier muss die Info rein!";
+
+        StringBuilder b = new StringBuilder().append("Du hast ")
+                .append(StringUtils.getAmountBigPart(Math.abs(getAmount().getValue())))
+                .append(StringUtils.getAmountSmallPart(getAmount().getValue()))
+                .append("€")
+                .append(" an ").append(getCreditor()).append(" überwiesen.");
+
+        return b.toString();
     }
 }

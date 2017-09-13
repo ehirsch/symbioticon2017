@@ -16,9 +16,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="228dp"
-        android:layout_marginLeft="138dp"
-        android:textSize="71sp"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="278dp"
+        android:textSize="35sp"
         android:text="pfff..." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="338dp"
+        android:layout_marginLeft="84dp"
+        android:textSize="71sp"
+        android:text="Fertig!" />
 
 </FrameLayout>

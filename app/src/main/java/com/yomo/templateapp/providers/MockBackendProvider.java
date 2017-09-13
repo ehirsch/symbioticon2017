@@ -52,7 +52,7 @@ public class MockBackendProvider implements ISmartTransactionProvider {
 
     public boolean transmitSmartTransactions(List<SmartTransaction> lst) {
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         }
         catch(InterruptedException ex) {
 
