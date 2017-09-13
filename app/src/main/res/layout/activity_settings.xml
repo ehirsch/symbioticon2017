@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_gradient"
+    android:orientation="vertical"
+    tools:context="com.yomo.templateapp.activity.SettingsActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/ActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Einstellungen"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/settingsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        tools:background="@color/settingsActivitiesTop">
+
+        <LinearLayout
+            android:id="@+id/settingsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/colorBlack20Percent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95.0dp"
+                android:minHeight="95.0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="94.0dp"
+                    android:background="@drawable/pressable_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/change_pw"
+                        style="@style/settingIntentRow"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="App-Passwort ändern"
+                        android:textColor="@color/settings_intent_row_simple_switch_enabled_text_color"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/SettingsSeperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95.0dp"
+                android:minHeight="95.0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="94.0dp"
+                    android:background="@drawable/pressable_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/change_pin"
+                        style="@style/settingIntentRow"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="yomo PIN ändern"
+                        android:textColor="@color/settings_intent_row_simple_switch_enabled_text_color"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/SettingsSeperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95.0dp"
+                android:minHeight="95.0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="94.0dp"
+                    android:background="@drawable/pressable_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/card_active"
+                        style="@style/settingIntentRow"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="yomo-card aktiviert"
+                        android:textColor="@color/settings_intent_row_simple_switch_enabled_text_color"/>
+
+                    <Switch
+                        android:id="@+id/settings_intent_row_switch_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="16dp"
+                        android:checked='true'
+                        android:enabled="true"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/SettingsSeperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95.0dp"
+                android:minHeight="95.0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="94.0dp"
+                    android:background="@drawable/pressable_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/order_card"
+                        style="@style/settingIntentRow"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="neue yomo-Card bestellen"
+                        android:textColor="@color/settings_intent_row_simple_switch_disabled_text_color"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/SettingsSeperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="text_turnover_saldo">65sp</dimen>
+    <dimen name="text_turnover_return_state">12sp</dimen>
+
+    <dimen name="titleTextSize">21sp</dimen>
+
+    <dimen name="text_vespa_standard">16sp</dimen>
+    <dimen name="text_vespa_h1">55sp</dimen>
+    <dimen name="text_vespa_h2">36sp</dimen>
+    <dimen name="text_vespa_h3">30sp</dimen>
+    <dimen name="text_vespa_h4">23sp</dimen>
+    <dimen name="text_vespa_h5">21sp</dimen>
+    <dimen name="text_vespa_h6">17sp</dimen>
+
+
+    <dimen name="text_vespa_f1">20sp</dimen>
+    <dimen name="text_vespa_f2">16sp</dimen>
+    <dimen name="text_vespa_settings_header">13sp</dimen>
+    <dimen name="text_vespa_settings_content_row">18sp</dimen>
+
+
+    <dimen name="padding_title_home_enabled">33dp</dimen>
+    <dimen name="padding_title_home_disabled">0dp</dimen>
+    <dimen name="text_vespa_big">33sp</dimen>
+    <dimen name="text_vespa_medium_big">30sp</dimen>
+    <dimen name="text_vespa_small">16sp</dimen>
+    <dimen name="bottom_btn_minheight">65dp</dimen>
+
+    <!-- bank info / select termsAndConditionsLink-->
+    <dimen name="selectBankRegionImageWidth">89dp</dimen>
+    <dimen name="selectBankRegionImageHeight">72.5dp</dimen>
+    <dimen name="view_bank_item_image_width">43dp</dimen>
+    <dimen name="view_bank_item_image_height">35dp</dimen>
+    <dimen name="view_bank_item_label_textsize">17dp</dimen>
+    <dimen name="view_bank_item_label_marginleft">20dp</dimen>
+    <dimen name="selectBankRegionImageMarginTop">30dp</dimen>
+    <dimen name="selectBankRegionNameMarginBottom">50dp</dimen>
+    <dimen name="selectBankRegionChoseLabelMarginBottom">10dp</dimen>
+    <dimen name="selectBankRegionItemPaddingLeftRight">25dp</dimen>
+    <dimen name="selectBankRegionItemHeight">50dp</dimen>
+    <dimen name="selectBankRegionItemMargin">0dp</dimen>
+    <dimen name="selectBankRegionItemCornerRadius">0dp</dimen>
+    <dimen name="selectBankRegionItemElevation">0dp</dimen>
+
+
+    <!-- turnover list-->
+    <!-- margins-->
+
+    <dimen name="margin_text_vespa_half_small">7dp</dimen>
+    <dimen name="margin_text_vespa_small">14dp</dimen>
+
+    <!-- Menue TurnoverList-->
+    <dimen name="menuButtonPaddingBetween">5dp</dimen>
+    <dimen name="menuButtonMarginBottom">30dp</dimen>
+    <dimen name="menuDistanceMarginRight">174dp</dimen>
+    <dimen name="menuLabelPaddingTop">8dp</dimen>
+
+    <dimen name="onboarding_progress_height">5dp</dimen>
+
+
+    <!-- font size -->
+
+    <!-- scale -->
+    <dimen name="messagebar_action_inline_max_width">128dp</dimen>
+    <dimen name="messagebar_extra_spacing_horizontal">0dp</dimen>
+    <dimen name="messagebar_max_width">0px</dimen>
+    <dimen name="messagebar_min_width">0px</dimen>
+    <dimen name="messagebar_padding_horizontal">10dp</dimen>
+    <dimen name="messagebar_padding_vertical">10dp</dimen>
+    <dimen name="messagebar_padding_vertical_2lines">10dp</dimen>
+    <dimen name="messagebar_text_size">14sp</dimen>
+    <dimen name="messagebarMinHeight">50dp</dimen>
+    <dimen name="messagebarMidHeight">60dp</dimen>
+    <dimen name="messagebarMaxHeight">70dp</dimen>
+    <dimen name="selectBankRegionItemStrokeHeight">1dp</dimen>
+    <dimen name="selectBankRegionBottomStrokeHeight">3dp</dimen>
+
+    <dimen name="half_grid_unit">4dp</dimen>
+    <dimen name="one_grid_unit">8dp</dimen>
+    <dimen name="negative_half_grid_unit">-4dp</dimen>
+    <dimen name="one_grid_unit_10dp">8dp</dimen>
+    <dimen name="two_grid_unit">16dp</dimen>
+    <dimen name="two_and_a_half_grid_unit">20dp</dimen>
+    <dimen name="three_grid_unit">24dp</dimen>
+    <dimen name="four_grid_unit">32dp</dimen>
+    <dimen name="five_grid_unit">40dp</dimen>
+    <dimen name="six_grid_unit">48dp</dimen>
+    <dimen name="eight_grid_unit">64dp</dimen>
+    <dimen name="ten_grid_unit">80dp</dimen>
+    <dimen name="twelve_grid_unit">96dp</dimen>
+
+    <dimen name="turnover_section_amount">28sp</dimen>
+
+    <dimen name="logo_horizontal_margin">56dp</dimen>
+
+    <dimen name="corner_radius">5dp</dimen>
+
+    <dimen name="download_button_size">41dp</dimen>
+    <dimen name="vespa_default_line_spacing">7sp</dimen>
+    <dimen name="vespa_snackbarline_spacing">5sp</dimen>
+    <dimen name="padding_settings_left">14dp</dimen>
+    <dimen name="pdf_bottom_margin">60dp</dimen>
+    <dimen name="a4height">842dp</dimen>
+    <dimen name="a4width">595dp</dimen>
+    <dimen name="pdf_start_end_margin">15dp</dimen>
+    <dimen name="pdf_cell_padding">6dp</dimen>
+    <dimen name="pdf_header_margin_top">46dp</dimen>
+    <dimen name="pdf_text_size_big">18sp</dimen>
+    <dimen name="pdf_header_elemt_margin_big">32dp</dimen>
+    <dimen name="pdf_header_elemt_margin_normal">21dp</dimen>
+    <dimen name="pdf_text_size_big_bold">14sp</dimen>
+    <dimen name="pdflogoHeight">53dp</dimen>
+    <dimen name="pdf_text_size_normal">10sp</dimen>
+    <dimen name="pdf_text_size_small">8sp</dimen>
+    <dimen name="pdf_text_size_mid">14sp</dimen>
+    <dimen name="pdf_text_size_huge">25sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

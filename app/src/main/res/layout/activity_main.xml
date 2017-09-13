@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yomo_gradient"
+    tools:context="com.yomo.templateapp.activity.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="15dp"
+        android:text="@string/fehler_beim_datenabruf"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+    <RelativeLayout
+        android:id="@+id/turnoverListFabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu"
+            style="@style/TurnoverFloatingActionMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:padding="15dp"
+            app:menu_fab_size="normal">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btnMyYomo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_my_yomo"
+                app:fab_colorDisabled="@color/colorTransparent"
+                app:fab_colorNormal="@color/colorTransparent"
+                app:fab_colorPressed="@color/colorTransparent"
+                app:fab_colorRipple="@color/colorTransparent"
+                app:fab_elevationCompat="1dp"
+                app:fab_label="Mein yomo"
+                app:fab_showShadow="false"
+                app:fab_size="normal"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btnFeedback"
+                style="@style/TurnoverFloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_feedback"
+                app:fab_label="Feedback"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btnService"
+                style="@style/TurnoverFloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_support"
+                app:fab_label="Service"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btnSettings"
+                style="@style/TurnoverFloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_einstellungen"
+                app:fab_label="Einstellungen"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btnTransfer"
+                style="@style/TurnoverFloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_geld_senden"
+                app:fab_label="Geld senden"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+</RelativeLayout>

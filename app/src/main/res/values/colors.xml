@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,                            <style name="YomoStartScreenTextApperance">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBlueBackground">#2196f3</color>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">@color/colorBlack</color>
+    <color name="colorAccent">#00c4ff</color>
+    <color name="colorBackground">#9B27AF</color>
+    <color name="colorCursorYellow">#FFDD00</color>
+
+
+    <color name="colorGrayDark">#595f6c</color>
+    <color name="colorBlue">#2196f3</color>
+    <color name="colorRed">#ff8252</color>
+    <color name="colorNegativ">#EE5560</color>
+    <color name="colorPositiv">#4DB757</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="section_header_text">#b2ffffff</color>
+
+
+    <!-- Turnover List-->
+    <color name="toListTxtGrayLight">#acafb5</color>
+    <color name="toListTxtGrayDark">#595f6c</color>
+    <color name="turnoverFilteredTextColor">#68FFFFFF</color>
+    <color name="turnoverReturnStateTextColor">#66FFFFFF</color>
+    <color name="turnoverHighlightColor">#FFFFFF</color>
+    <color name="turnoverAmountValue">#FFFFFF</color>
+    <color name="turnOverListHeaderItemColor">@color/colorBlack20Percent</color>
+    <color name="turnOverListHeaderFirstItemColor">#1C77AE</color>
+    <!-- Transfer -->
+    <color name="colorTransferBackground">#F08E5E</color>
+    <color name="colorTransferFlowFormBackground">#FFFFFF</color>
+    <color name="colorTransferPinBackground">#19ef884f</color>
+    <color name="colorTransferText">#4F4F4F</color>
+    <color name="colorTransferHint">#EF714F</color>
+    <color name="colorTransferPrimary">#F08E5E</color>
+    <color name="colorAccentTransfer">#EF884F</color>
+    <color name="colorTransferButtonBackground">#F08E5E</color>
+    <color name="colorTransferButtonTextColor">#FFFFFF</color>
+
+    <color name="capturePinBTextColor">#0e5088</color>
+    <color name="onboarding_color_1">#37C76A</color>
+    <color name="onboarding_color_2">#08A67F</color>
+    <color name="onboarding_color_3">#0CA3D5</color>
+    <color name="onboarding_color_4">#2699F9</color>
+    <color name="onboarding_color_5">#347BFF</color>
+    <color name="onboarding_color_6">#906EF7</color>
+    <color name="onboarding_color_7">#A354FF</color>
+    <color name="onboarding_color_8">#E34CDA</color>
+    <color name="onboarding_color_9">#D75DB0</color>
+    <color name="onboarding_color_10">#F4519D</color>
+    <color name="onboarding_color_11">#F35382</color>
+    <color name="onboarding_color_12">#F3575E</color>
+    <color name="onboarding_color_13">#EF884F</color>
+
+    <color name="signup_step_legitimation_successful">#15a558</color>
+    <color name="signup_step_legitimation_failed">#c32b54</color>
+    <color name="errorbarBackground">#E6e4e4e4</color>
+    <color name="messagebarTextColor">#e6000000</color>
+    <color name="colorCallToActionButtonBorder">#33000000</color>
+    <color name="colorDatePickerTitle">#0a264a</color>
+    <color name="colorBlack04Percent">#0A000000</color>
+    <color name="colorBlack10Percent">#19000000</color>
+    <color name="colorBlack14Percent">#24000000</color>
+    <color name="colorBlack20Percent">#33000000</color>
+    <color name="colorBlack30Percent">#4c000000</color>
+    <color name="colorBlack40Percent">#66000000</color>
+    <color name="colorBlack50Percent">#7F000000</color>
+    <color name="colorWhite70Percent">#b2ffffff</color>
+    <!--Cta state -->
+    <color name="colorWhite85Percent">#D8FFFFFF</color>
+    <color name="colorWhite40Percent">#66ffffff</color>
+    <color name="colorBlack70Percent">#b2000000</color>
+
+    <color name="colorSettingsBg">#f2f2f2</color>
+    <color name="colorSettingsHeaderBg">#6d396e</color>
+    <color name="colorSettingsHeaderTextColor">#aeaeae</color>
+    <color name="colorSettingsItemTextColor">#6d396e</color>
+    <color name="colorSettingsItemTextColorDisabled">#aeaeae</color>
+
+    <!-- select bank info-->
+    <color name="selectBankRegionBackground">#8bb64e</color>
+    <color name="selectBankRegionBackgroundHighlighted">#dbebaf</color>
+    <color name="selectBankRegion">#98c864</color>
+    <color name="selectBankRegionTextColor">#b3000000</color>
+    <color name="selectBankRegionButtonText">#8bc865</color>
+    <color name="selectBankRegionBottomStroke">#48000000</color>
+    <color name="selectBankRegionItemStroke">#32000000</color>
+
+    <color name="changePinPrimary">#f4f4f4</color>
+    <color name="changePinAccent">#29B467</color>
+    <color name="changePinTextPrimary">#99000000</color>
+    <color name="changePinTextAccent">#AEAEAE</color>
+    <color name="changePinInputTextPrimary">#333333</color>
+    <color name="changePinToggleHidePinColor">#29B467</color>
+    <color name="colorPositivFeedbackBg">#32b46a</color>
+
+    <color name="changePasswordPrimary">#f4f4f4</color>
+    <color name="changePasswordTextPrimary">#99000000</color>
+    <color name="changePasswordTextAccent">#AEAEAE</color>
+    <color name="changePasswordToggleHidePinColor">#29B467</color>
+
+    <color name="yomo_color_01">#73b85a</color>
+    <color name="yomo_color_02">#41b996</color>
+    <color name="yomo_color_03">#36afc9</color>
+    <color name="yomo_color_04">#1785e2</color>
+    <color name="yomo_color_05">#2459ba</color>
+    <color name="yomo_color_06">#5a46aa</color>
+    <color name="yomo_color_07">#973491</color>
+    <color name="yomo_color_08">#b92e8d</color>
+    <color name="yomo_color_09">#e23c6d</color>
+    <color name="yomo_color_10">#e5585e</color>
+    <color name="yomo_color_11">#ef884f</color>
+    <color name="yomo_color_12">#fbbc42</color>
+    <color name="yomo_color_13">#fbe100</color>
+    <color name="yomo_color_14">#ced31e</color>
+    <color name="yomo_color_15">#a0c63c</color>
+
+    <color name="turnover_empty_color">#9939b4ff</color>
+    <color name="turnover_button_text">#4293E1</color>
+    <color name="turnover_details_return_debit_options_background">#FBFBFB</color>
+    <color name="turnover_details_textcolor">#8F8F8F</color>
+    <color name="turnover_details_action">#212121</color>
+
+    <color name="list_item_background_deselected">#0a000000</color>
+    <color name="list_item_background_selected">#4d000000</color>
+
+    <color name="onboarding_progress_gray">#26000000</color>
+    <color name="white_transparent">#80ffffff</color>
+    <color name="text">#B3000000</color>
+    <color name="title">#B3000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_light_transparent">#20000000</color>
+    <color name="settingsActivitiesTop">#E77865</color>
+    <color name="settingsActivitiesBottom">#DA486C</color>
+    <color name="settingsTop">#E77865</color>
+    <color name="settingsBottom">#DA486C</color>
+    <color name="settings_intent_row_simple_switch_enabled_text_color">@color/colorWhite</color>
+    <color name="settings_intent_row_simple_switch_disabled_text_color">@color/white_transparent</color>
+    <color name="settings_intent_row_switch_locked_text_color">@color/white_transparent</color>
+    <color name="settings_intent_row_switch_unlocked_text_color">@color/colorWhite</color>
+    <color name="transferTopColor">#ff3eb1a8</color>
+    <color name="transferBottomColor">#ff3a87a8</color>
+    <color name="serviceTopColor">#17BA8A</color>
+    <color name="serviceBottomColor">#07A963</color>
+
+    <color name="feedbackTopColor">@color/onboarding_color_7</color>
+    <color name="feedbackBottomColor">@color/onboarding_color_8</color>
+
+    <color name="overdraftTopColor">#ff03e0f4</color>
+    <color name="overdraftBottomColor">#ff12b3d6</color>
+    <color name="overdraftProgressBarBackgroundColor">#1191B1</color>
+
+    <color name="myYomoTopColor">#d75c99</color>
+    <color name="myYomoBottomColor">#e55461</color>
+    <color name="exportStatementColor">#e45565</color>
+
+    <integer-array name="yomo_colors">
+        <item>@color/onboarding_color_1</item>
+        <item>@color/onboarding_color_2</item>
+        <item>@color/onboarding_color_3</item>
+        <item>@color/onboarding_color_4</item>
+        <item>@color/onboarding_color_5</item>
+        <item>@color/onboarding_color_6</item>
+        <item>@color/onboarding_color_7</item>
+        <item>@color/onboarding_color_8</item>
+        <item>@color/onboarding_color_9</item>
+        <item>@color/onboarding_color_10</item>
+        <item>@color/onboarding_color_11</item>
+        <item>@color/onboarding_color_12</item>
+        <item>@color/onboarding_color_13</item>
+    </integer-array>
+    <color name="statement_color_1">#0185B1</color>
+    <color name="statement_color_2">#1785E2</color>
+    <color name="statement_color_3">#2459BA</color>
+    <color name="statement_color_4">#5837C4</color>
+    <color name="statement_color_5">#702CA2</color>
+    <color name="statement_color_6">#973491</color>
+    <color name="statement_color_7">#B92E8D</color>
+    <color name="statement_color_8">#CE347C</color>
+    <color name="statement_color_9">#E23C6D</color>
+    <color name="statement_color_10">#EF884F</color>
+
+    <integer-array name="yomo_account_state_header_colors">
+        <item>@color/statement_color_1</item>
+        <item>@color/statement_color_2</item>
+        <item>@color/statement_color_3</item>
+        <item>@color/statement_color_4</item>
+        <item>@color/statement_color_5</item>
+        <item>@color/statement_color_6</item>
+        <item>@color/statement_color_7</item>
+        <item>@color/statement_color_8</item>
+        <item>@color/statement_color_9</item>
+        <item>@color/statement_color_10</item>
+    </integer-array>
+
+    <color name="priority_verbose">#bbbbbb</color>
+    <color name="priority_debug">#33B5E5</color>
+    <color name="priority_info">#99cc00</color>
+    <color name="priority_warn">#ffbb33</color>
+    <color name="priority_error">#FF6B68</color>
+    <color name="priority_assert">#aa66cc</color>
+
+    <color name="log_item_message">#444</color>
+    <color name="log_item_exception">#666</color>
+    <color name="log_item_swipe_border">#77ff2222</color>
+
+    <color name="fingerprint_success">#009688</color>
+    <color name="fingerprint_error">#F4511E</color>
+    <color name="error_log_background">#36b362</color>
+    <color name="PdfPageDivider">#FFCECECE</color>
+
+    <color name="color_accent">#009dcc</color>
+    <color name="color_primary">#00617e</color>
+
+    <color name="titlebar_background">@color/color_accent</color>
+    <color name="white_text_color">#fff</color>
+
+    <color name="box_stroke">#aaa</color>
+    <color name="box_solid">#aadddddd</color>
+    <color name="box_text_color">@color/color_primary</color>
+
+    <color name="button_primary_text_color">@color/color_primary</color>
+    <color name="button_primary_stroke">@color/color_primary</color>
+    <color name="button_primary_background">#ccebf5</color>
+    <color name="button_primary_background_pressed">#b7d3dc</color>
+
+    <color name="button_gray_background">#00a652</color>
+    <color name="button_gray_background_pressed">#00d652</color>
+
+    <color name="info_text_color">@color/color_primary</color>
+
+    <color name="login_title_text_color">@color/color_primary</color>
+    <color name="login_input_text_color">@color/color_primary</color>
+    <color name="login_input_text_color_hint">@color/color_accent</color>
+    <color name="login_desc_text_color">@color/color_primary</color>
+
+    <color name="identification_instructionbar_background">@color/color_primary</color>
+    <color name="identification_instruction_counter">#fff</color>
+    <color name="identification_instruction_text">#fff</color>
+    <color name="identification_cam_mask">#00000000</color>
+
+    <color name="taninput_background">#3300aa33</color>
+    <color name="taninput_background_valid">#3300aa33</color>
+    <color name="taninput_background_invalid">#3300aa33</color>
+    <color name="taninput_title_text_color">#555</color>
+    <color name="taninput_digit_text_color">#333</color>
+    <color name="taninput_status_text_color">#0a3</color>
+
+    <color name="verificationresult_result_text_color">#555</color>
+
+    <color name="callToActionBtnBackground">@color/colorWhite</color>
+
+</resources>

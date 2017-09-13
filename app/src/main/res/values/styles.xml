@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+
+    <style name="ActivityTitle">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/colorBlack70Percent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="TextBlock">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlack70Percent</item>
+        <item name="android:layout_margin">@dimen/two_grid_unit</item>
+        <item name="android:lineSpacingMultiplier">1.31</item>
+    </style>
+
+    <style name="TurnoverFloatingActionMenu">
+        <item name="android:src">@drawable/floating_menu_closed</item>
+        <item name="menu_backgroundColor">#cc000000</item>
+        <item name="menu_buttonSpacing">@dimen/menuButtonPaddingBetween</item>
+        <item name="menu_colorNormal">@color/colorTransparent</item>
+        <item name="menu_colorPressed">@color/colorTransparent</item>
+        <item name="menu_labels_position">left</item>
+        <item name="menu_icon">@drawable/floating_menu_closed</item>
+        <item name="menu_labels_colorNormal">@color/colorTransparent</item>
+        <item name="menu_labels_colorPressed">@color/colorTransparent</item>
+        <item name="menu_labels_colorRipple">@color/colorTransparent</item>
+        <item name="menu_labels_margin">@dimen/one_grid_unit</item>
+        <item name="menu_labels_paddingLeft">@dimen/one_grid_unit</item>
+        <item name="menu_labels_paddingRight">@dimen/one_grid_unit</item>
+        <item name="menu_labels_textColor">@color/white_text_color</item>
+        <item name="menu_labels_textSize">18sp</item>
+        <item name="menu_showShadow">false</item>
+    </style>
+
+    <style name="TurnoverFloatingActionButton">
+        <item name="fab_colorDisabled">@color/colorTransparent</item>
+        <item name="fab_colorNormal">@color/colorTransparent</item>
+        <item name="fab_colorPressed">@color/colorTransparent</item>
+        <item name="fab_colorRipple">@color/colorTransparent</item>
+        <item name="fab_elevationCompat">0dp</item>
+        <item name="fab_showShadow">false</item>
+        <item name="fab_size">normal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="overdraft_card_action">
+        <item name="android:background">@drawable/breadcrump_active</item>
+        <item name="android:textColor">@color/overdraftBottomColor</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:minWidth">72dp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">@dimen/one_grid_unit</item>
+        <item name="android:paddingBottom">@dimen/one_grid_unit</item>
+        <item name="android:paddingLeft">@dimen/two_grid_unit</item>
+        <item name="android:paddingRight">@dimen/two_grid_unit</item>
+    </style>
+
+    <style name="LabelTextButton">
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/bottom_btn_minheight</item>
+        <item name="android:background">@drawable/call_to_action_button_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#12B3D6</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:lineSpacingMultiplier">1.19</item>
+        <item name="android:height">25dp</item>
+    </style>
+
+    <style name="settingIntentRow">
+        <item name="android:layout_marginLeft">@dimen/padding_settings_left</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:focusable">false</item>
+        <item name="android:editable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:textSize">@dimen/text_vespa_settings_content_row</item>
+    </style>
+
+    <style name="SettingsSeperator">
+        <item name="android:background">@color/colorBlack20Percent</item>
+    </style>
+
+</resources>
