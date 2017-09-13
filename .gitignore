@@ -1,2 +1,4 @@
 **/api-config.xml
 local.properties
+**/build/
+smartsteuer-mock/

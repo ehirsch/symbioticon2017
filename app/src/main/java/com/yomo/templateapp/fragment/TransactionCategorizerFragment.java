@@ -29,6 +29,7 @@ public class TransactionCategorizerFragment extends Fragment {
     private SmartcheckActivity smartcheckActivity;
     private SmartTransaction smartTransaction;
     private int questionIndex;
+    private TextView question;
 
     private OnFragmentInteractionListener mListener;
 
@@ -106,7 +107,9 @@ public class TransactionCategorizerFragment extends Fragment {
 
     private void updateQuestion(View inflate) {
         // TODO: animation / progress!
-        TextView question = inflate.findViewById(R.id.question);
+        if( null == question ) {
+            question = inflate.findViewById(R.id.question);
+        }
         question.setText(smartTransaction.getQuestions().get(questionIndex));
     }
 
