@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.yomo.templateapp.utils.FontUtils;
 import com.yomo.templateapp.R;
+import com.yomo.templateapp.utils.SmartcheckUtils;
 import com.yomo.templateapp.utils.StringUtils;
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ import io.swagger.client.ApiException;
 import io.swagger.client.api.TransactionApi;
 import io.swagger.client.model.Amount;
 import io.swagger.client.model.GiroTransaction;
+import io.swagger.client.model.SmartTransaction;
 import io.swagger.client.model.Transaction;
 
 public class SmartcheckActivity extends AppCompatActivity {
@@ -46,7 +48,7 @@ public class SmartcheckActivity extends AppCompatActivity {
 		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
-				updateListView(MainActivity.cachedTransactions);
+				updateListView(SmartcheckUtils.getRelevantTransactions());
 
 			}
 		});
@@ -66,14 +68,14 @@ public class SmartcheckActivity extends AppCompatActivity {
 		error.setText(error.getText().toString() + "\n\n" + e.getResponseBody());
 	}
 
-	private void updateListView(List<Transaction> result) {
+	private void updateListView(List<SmartTransaction> result) {
 		SmartTransactionAdapter adapter = new SmartTransactionAdapter(this, new ArrayList<>(result));
 		listView.setAdapter(adapter);
 	}
 
-	public class SmartTransactionAdapter extends ArrayAdapter<Transaction> {
+	public class SmartTransactionAdapter extends ArrayAdapter<SmartTransaction> {
 
-		SmartTransactionAdapter(Context context, ArrayList<Transaction> txs) {
+		SmartTransactionAdapter(Context context, ArrayList<SmartTransaction> txs) {
 			super(context, 0, txs);
 		}
 
@@ -84,7 +86,7 @@ public class SmartcheckActivity extends AppCompatActivity {
 				convertView = LayoutInflater.from(getContext()).inflate(R.layout.smart_transaction_item, parent, false);
 			}
 
-			GiroTransaction t = (GiroTransaction) getItem(position);
+			SmartTransaction t = (SmartTransaction) getItem(position);
 
 			TextView a1 = convertView.findViewById(R.id.amount_value);
 			TextView a2 = convertView.findViewById(R.id.amount_value_decimal);

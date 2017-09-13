@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.github.clans.fab.FloatingActionMenu;
 import com.yomo.templateapp.utils.FontUtils;
 import com.yomo.templateapp.R;
+import com.yomo.templateapp.utils.SmartcheckUtils;
 import com.yomo.templateapp.utils.StringUtils;
 
 import java.util.ArrayList;
@@ -33,8 +34,6 @@ public class MainActivity extends AppCompatActivity implements ApiCallback<List<
 	private final TransactionApi transactionApi = new TransactionApi();
 
 	private ListView listView;
-
-	public static List<Transaction> cachedTransactions;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements ApiCallback<List<
 
 	@Override
 	public void onSuccess(final List<Transaction> result, int statusCode, Map<String, List<String>> responseHeaders) {
-		MainActivity.cachedTransactions = result;
+		SmartcheckUtils.setTransactionList(result);
 
 		runOnUiThread(new Runnable() {
 			@Override
