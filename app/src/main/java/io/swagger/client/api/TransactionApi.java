@@ -224,7 +224,7 @@ public class TransactionApi {
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         if (maxAge != null)
-        localVarQueryParams.addAll(apiClient.parameterToPairs("", "max-age", maxAge));
+        localVarQueryParams.addAll(apiClient.parameterToPairs("", "max-age", 1));
         if (limit != null)
         localVarQueryParams.addAll(apiClient.parameterToPairs("", "limit", limit));
         if (offset != null)
