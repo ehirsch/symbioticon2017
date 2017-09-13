@@ -12,8 +12,6 @@ import android.widget.TextView;
 import com.yomo.templateapp.R;
 import com.yomo.templateapp.activity.SmartcheckActivity;
 
-import org.w3c.dom.Text;
-
 import io.swagger.client.model.SmartTransaction;
 
 
@@ -30,6 +28,7 @@ public class TransactionCategorizerFragment extends Fragment {
 
     private SmartcheckActivity smartcheckActivity;
     private SmartTransaction smartTransaction;
+    private int questionIndex;
 
     private OnFragmentInteractionListener mListener;
 
@@ -58,6 +57,7 @@ public class TransactionCategorizerFragment extends Fragment {
             smartcheckActivity = (SmartcheckActivity) getActivity();
             int transactionIndex = getArguments().getInt("transaction_index");
             smartTransaction = smartcheckActivity.getItem(transactionIndex);
+            questionIndex = 0;
         }
     }
 
@@ -70,14 +70,14 @@ public class TransactionCategorizerFragment extends Fragment {
         TextView transactionInfo = inflate.findViewById(R.id.transaction_info);
         transactionInfo.setText(smartTransaction.getInfoText() );
 
-        TextView question = inflate.findViewById(R.id.question);
-        question.setText(smartTransaction.getQuestions().get(0));
+        updateQuestion(inflate);
 
         TextView yesButton = inflate.findViewById(R.id.smartcheck_card_btn_yes);
         yesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                smartcheckActivity.navigateToNext(true);
+                smartcheckActivity.storeAnswer(true);
+                smartcheckActivity.navigateToNext();
             }
         });
 
@@ -85,7 +85,12 @@ public class TransactionCategorizerFragment extends Fragment {
         noButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                smartcheckActivity.navigateToNext(false);
+                smartcheckActivity.storeAnswer(false);
+                if( hasMoreQuestions() ) {
+                    updateQuestion(view);
+                } else {
+                    smartcheckActivity.navigateToNext();
+                }
             }
         });
 
@@ -94,11 +99,15 @@ public class TransactionCategorizerFragment extends Fragment {
 
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
+    private boolean hasMoreQuestions() {
+        questionIndex++;
+        return questionIndex < smartTransaction.getQuestions().size();
+    }
+
+    private void updateQuestion(View inflate) {
+        // TODO: animation / progress!
+        TextView question = inflate.findViewById(R.id.question);
+        question.setText(smartTransaction.getQuestions().get(questionIndex));
     }
 
     @Override

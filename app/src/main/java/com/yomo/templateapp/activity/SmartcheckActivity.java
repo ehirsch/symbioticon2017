@@ -92,9 +92,7 @@ public class SmartcheckActivity extends AppCompatActivity
         return relevant.get(i);
     }
 
-    public void navigateToNext(boolean lastAnswer) {
-
-        relevant.get(currentIndex).getAnswers().add(lastAnswer);
+    public void navigateToNext() {
 
         currentIndex = currentIndex+1;
 
@@ -107,6 +105,10 @@ public class SmartcheckActivity extends AppCompatActivity
             setCTAText("Ich will mein Geld zurück!");
             SmartcheckUtils.transmitSmartTransactions(relevant);
         }
+    }
+
+    public void storeAnswer(boolean lastAnswer) {
+        relevant.get(currentIndex).getAnswers().add(lastAnswer);
     }
 
     private void setCTAText(String text) {
