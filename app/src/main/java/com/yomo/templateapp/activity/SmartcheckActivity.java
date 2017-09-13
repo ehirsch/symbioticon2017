@@ -8,14 +8,14 @@ import android.widget.TextView;
 import com.yomo.templateapp.utils.FontUtils;
 import com.yomo.templateapp.R;
 
-public class OverdraftActivity extends AppCompatActivity {
+public class SmartcheckActivity extends AppCompatActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_overdraft);
+		setContentView(R.layout.activity_smartcheck);
 
-		TextView infoText = findViewById(R.id.overdraft_start_info_text);
+		TextView infoText = findViewById(R.id.smartcheck_start_info_text);
 		TextView title = findViewById(R.id.title);
 		TextView button = findViewById(R.id.button);
 

@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:id="@+id/turnover_overdraft_card"
+        android:id="@+id/smartcheck_teaser_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/one_grid_unit"
@@ -15,31 +15,38 @@
         android:padding="@dimen/two_grid_unit">
 
         <TextView
-            android:id="@+id/overdraft_card_title"
+            android:id="@+id/smartcheck_card_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gleich durchstarten 🚀"
-            android:textSize="20sp"/>
+            android:text="Ärger den Wolfgang 🚀"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="112dp"
+            android:layout_height="114dp"
+            android:src="@drawable/wolfgang2" />
 
         <TextView
-            android:id="@+id/overdraft_card_text"
+            android:id="@+id/smartcheck_card_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/one_grid_unit"
             android:lineSpacingMultiplier="1.31"
+            android:paddingBottom="@dimen/one_grid_unit"
             android:paddingTop="@dimen/one_grid_unit"
-            android:text="Bei yomo kannst du einen Dispo von 500€ beantragen. "
+            android:text="Bei yomo kannst Du Deine Ausgaben automatisch von der Steuer absetzen."
             android:textColor="@color/colorWhite"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/overdraft_card_btn"
+            android:id="@+id/smartcheck_card_btn"
             style="@style/overdraft_card_action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/half_grid_unit"
             android:layout_marginTop="@dimen/one_grid_unit"
-            android:text="Dispo beantragen"/>
+            android:text="smartcheck starten" />
 
     </LinearLayout>
 </LinearLayout>

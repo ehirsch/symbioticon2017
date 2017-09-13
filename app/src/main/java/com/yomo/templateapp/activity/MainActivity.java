@@ -155,20 +155,20 @@ public class MainActivity extends AppCompatActivity implements ApiCallback<List<
 				FontUtils.getInstance().applyYOMOFont(amount2);
 
 			} else if (position == 1) {
-				if (convertView == null || convertView.findViewById(R.id.turnover_overdraft_card) == null) {
-					convertView = LayoutInflater.from(getContext()).inflate(R.layout.overdraft_card, parent, false);
-					TextView button = convertView.findViewById(R.id.overdraft_card_btn);
+				if (convertView == null || convertView.findViewById(R.id.smartcheck_teaser_card) == null) {
+					convertView = LayoutInflater.from(getContext()).inflate(R.layout.smartcheck_card, parent, false);
+					TextView button = convertView.findViewById(R.id.smartcheck_card_btn);
 					button.setOnClickListener(new View.OnClickListener() {
 						@Override
 						public void onClick(View view) {
-							Intent intent = new Intent(MainActivity.this, OverdraftActivity.class);
+							Intent intent = new Intent(MainActivity.this, SmartcheckActivity.class);
 							startActivity(intent);
 						}
 					});
 
-					TextView cardTitle = convertView.findViewById(R.id.overdraft_card_title);
-					TextView cardText = convertView.findViewById(R.id.overdraft_card_text);
-					TextView cardButton = convertView.findViewById(R.id.overdraft_card_btn);
+					TextView cardTitle = convertView.findViewById(R.id.smartcheck_card_title);
+					TextView cardText = convertView.findViewById(R.id.smartcheck_card_text);
+					TextView cardButton = convertView.findViewById(R.id.smartcheck_card_btn);
 
 					FontUtils.getInstance().applyYOMOFont(cardTitle, FontUtils.Type.SEMI_BOLD);
 					FontUtils.getInstance().applyYOMOFont(cardText);

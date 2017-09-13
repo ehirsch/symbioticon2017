@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/overdraft_gradient"
-    tools:context="com.yomo.templateapp.activity.OverdraftActivity">
+    tools:context="com.yomo.templateapp.activity.SmartcheckActivity">
 
     <TextView
         android:id="@+id/title"
@@ -27,7 +27,7 @@
         android:src="@drawable/overdraft_start_illustration"/>
 
     <TextView
-        android:id="@+id/overdraft_start_info_text"
+        android:id="@+id/smartcheck_start_info_text"
         style="@style/TextBlock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
