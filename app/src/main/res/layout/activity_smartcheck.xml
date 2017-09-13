@@ -13,26 +13,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Dispo beantragen"/>
-
-    <ImageView
-        android:id="@+id/overdraft_rejected_fragment_illustration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/four_grid_unit"
-        android:width="172.15dp"
-        android:height="138.97dp"
-        android:src="@drawable/overdraft_start_illustration"/>
+        android:text="smartcheck" />
 
     <TextView
         android:id="@+id/smartcheck_start_info_text"
         style="@style/TextBlock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/overdraft_rejected_fragment_illustration"
-        android:text="Du kannst jetzt einen Start-Dispo-Kredit von 500€ beantragen. Es dauert maximal ein paar Tage, bis dieser aktiv ist.\n\nBeachte, dass du ein durchschnittliches monatliches Netto-Einkommen von mindestens 500€ benötigst. "/>
+        android:layout_below="@+id/title"
+        android:layout_marginTop="23dp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
 
     <TextView
         android:id="@+id/button"
@@ -40,6 +38,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Los geht's"/>
+        android:text="Jetzt zu smartsteuer übertragen" />
 
 </RelativeLayout>

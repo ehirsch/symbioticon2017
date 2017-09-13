@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements ApiCallback<List<
 
 	private ListView listView;
 
+	public static List<Transaction> cachedTransactions;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -95,6 +97,8 @@ public class MainActivity extends AppCompatActivity implements ApiCallback<List<
 
 	@Override
 	public void onSuccess(final List<Transaction> result, int statusCode, Map<String, List<String>> responseHeaders) {
+		MainActivity.cachedTransactions = result;
+
 		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
