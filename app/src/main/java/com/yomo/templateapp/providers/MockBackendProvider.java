@@ -35,26 +35,6 @@ public class MockBackendProvider implements ISmartTransactionProvider {
 
     private SmartTransaction getSmartcheckTransaction(GiroTransaction g) {
 
-        /*
-        if(g.getCreditor().toLowerCase().indexOf("telefonica") >= 0) {
-
-            SmartTransaction t = new SmartTransaction(g);
-
-            List<String> questions = new ArrayList<>();
-            questions.add("Hast Du diesen Vertrag beruflich genutzt?");
-
-            t.setQuestions(questions);
-
-            return t;
-        }
-       */
-
-        //forget aout old dummy data
-        if(Math.abs(g.getAmount().getValue()) < 200) {
-            return null;
-        }
-
-
         if(g.getCreditor().toLowerCase().indexOf("telekom") >= 0) {
 
             SmartTransaction t = new SmartTransaction(g);
