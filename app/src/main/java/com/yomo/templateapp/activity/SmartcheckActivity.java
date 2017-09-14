@@ -1,5 +1,6 @@
 package com.yomo.templateapp.activity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -25,12 +26,14 @@ public class SmartcheckActivity extends AppCompatActivity
 
     private int currentIndex;
     private List<io.swagger.client.model.SmartTransaction> relevant;
+    private boolean done;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_smartcheck);
         currentIndex = 0;
+        done = false;
         relevant = SmartcheckUtils.getRelevantTransactions();
         loadNextFragment(currentIndex);
 
@@ -41,7 +44,11 @@ public class SmartcheckActivity extends AppCompatActivity
 		cta.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				finish();
+                finish();
+                if( done ) {
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                    startActivity(browserIntent);
+                }
 			}
 		});
 	}
@@ -100,7 +107,7 @@ public class SmartcheckActivity extends AppCompatActivity
             loadNextFragment(currentIndex);
         } else {
             System.out.println("### done -> finish move!");
-
+            done = true;
             loadFilingFragment();
             setCTAText("Ich will mein Geld zurück!");
             SmartcheckUtils.transmitSmartTransactions(relevant);
