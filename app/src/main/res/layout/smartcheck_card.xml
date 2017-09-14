@@ -48,12 +48,12 @@
 
         <TextView
             android:id="@+id/smartcheck_card_btn"
-            style="@style/overdraft_card_action"
+            style="@style/LabelTextButton"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:minHeight="45dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/half_grid_unit"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="@dimen/one_grid_unit"
             android:text="Na dann, LOS!" />
 
 

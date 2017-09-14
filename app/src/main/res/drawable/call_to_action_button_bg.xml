@@ -3,16 +3,19 @@
     <item android:state_focused="true" android:state_pressed="true">
         <shape>
             <solid android:color="@color/colorWhite85Percent"/>
+            <corners android:radius="4dp"/>
         </shape>
     </item>
     <item android:state_pressed="true">
         <shape>
             <solid android:color="@color/colorWhite85Percent"/>
+            <corners android:radius="4dp"/>
         </shape>
     </item>
     <item>
         <shape>
             <solid android:color="@color/callToActionBtnBackground"/>
+            <corners android:radius="4dp"/>
         </shape>
     </item>
 </selector>
