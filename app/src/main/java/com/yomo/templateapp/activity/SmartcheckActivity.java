@@ -46,7 +46,7 @@ public class SmartcheckActivity extends AppCompatActivity
 			public void onClick(View view) {
                 finish();
                 if( done ) {
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://steuerjahr2016.smartsteuer.de/mobile-phone.html"));
                     startActivity(browserIntent);
                 }
 			}
