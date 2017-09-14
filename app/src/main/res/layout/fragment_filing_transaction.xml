@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="Wir haben 4 Ausgaben gefunden, die wir nutzen können.\nWollen wir das jetzt durchziehen? 💶  "
+                android:text="Wir haben 4 Ausgaben gefunden, die wir nutzen können.💶  "
                 android:textColor="@color/turnoverAmountValue"
                 android:textSize="30sp" />
         </LinearLayout>
