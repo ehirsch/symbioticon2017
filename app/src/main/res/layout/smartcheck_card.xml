@@ -21,23 +21,30 @@
             android:text="Zeit für die Steuererklärung - Ärger den Wolfgang 🚀"
             android:textSize="20sp" />
 
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="112dp"
-            android:layout_height="114dp"
-            android:src="@drawable/wolfgang2" />
-
-        <TextView
-            android:id="@+id/smartcheck_card_text"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:lineSpacingMultiplier="1.31"
-            android:paddingBottom="@dimen/one_grid_unit"
-            android:paddingTop="@dimen/one_grid_unit"
-            android:text="Mit YOMO macht sich die Erklärung fast von selbst. Du musst nur ein paar Fragen beantworten."
-            android:textColor="@color/colorWhite"
-            android:textSize="16sp" />
+            android:layout_alignParentStart="true"
+            android:layout_margin="15dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="112dp"
+                android:layout_height="114dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/wolfgang2" />
+
+            <TextView
+                android:id="@+id/smartcheck_card_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.31"
+                android:text="Mit YOMO macht sich die Erklärung fast von selbst. Du musst nur ein paar Fragen beantworten."
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/smartcheck_card_btn"
@@ -45,8 +52,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/half_grid_unit"
+            android:layout_marginLeft="100dp"
             android:layout_marginTop="@dimen/one_grid_unit"
             android:text="Na dann, LOS!" />
+
 
     </LinearLayout>
 </LinearLayout>
