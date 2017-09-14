@@ -53,8 +53,8 @@
                 style="@style/ActivityTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_margin="20dp"
+                android:textSize="12pt"
                 android:text="question" />
 
             <LinearLayout
@@ -96,6 +96,13 @@
 
 
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/ic_call_support" />
 
 
     </LinearLayout>
