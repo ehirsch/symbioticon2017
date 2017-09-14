@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lineSpacingMultiplier="1.31"
-                android:text="Mit YOMO macht du deine Steuererklärung fast von selbst. Du musst nur ein paar Fragen beantworten."
+                android:text="Mit YOMO macht du deine Steuererklärung in wenigen Minuten. Du musst nur ein paar Fragen beantworten."
                 android:textColor="@color/colorWhite"
                 android:textSize="16sp" />
 
