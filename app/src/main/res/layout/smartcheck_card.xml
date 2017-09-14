@@ -18,7 +18,7 @@
             android:id="@+id/smartcheck_card_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Zeit für die Steuererklärung - Ärger den Wolfgang 🚀"
+            android:text="Hast du kurz Zeit? Wir wollen den Wolfgang ärgern. 😈"
             android:textSize="20sp" />
 
         <LinearLayout
@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lineSpacingMultiplier="1.31"
-                android:text="Mit YOMO macht sich die Erklärung fast von selbst. Du musst nur ein paar Fragen beantworten."
+                android:text="Mit YOMO macht du deine Steuererklärung in wenigen Minuten. Du musst nur ein paar Fragen beantworten."
                 android:textColor="@color/colorWhite"
                 android:textSize="16sp" />
 
@@ -49,12 +49,13 @@
         <TextView
             android:id="@+id/smartcheck_card_btn"
             style="@style/LabelTextButton"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"
-            android:minHeight="45dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Na dann, LOS!" />
+            android:minHeight="28dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="Na dann, los"
+            android:textSize="18sp" />
 
 
     </LinearLayout>
