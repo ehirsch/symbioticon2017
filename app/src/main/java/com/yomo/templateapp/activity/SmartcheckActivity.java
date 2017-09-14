@@ -109,7 +109,7 @@ public class SmartcheckActivity extends AppCompatActivity
             System.out.println("### done -> finish move!");
             done = true;
             loadFilingFragment();
-            setCTAText("Ich will mein Geld zurück!");
+            setCTAText("Ja - ich will mein Geld zurück!");
             SmartcheckUtils.transmitSmartTransactions(relevant);
         }
     }

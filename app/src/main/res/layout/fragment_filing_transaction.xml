@@ -6,11 +6,36 @@
     android:background="@drawable/overdraft_gradient"
     tools:context="com.yomo.templateapp.fragment.FilingFragment">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="214dp"
-        app:srcCompat="@drawable/wollex" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/wollex" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg1">
+
+            <TextView
+                android:id="@+id/filing_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Wir haben 4 Ausgaben gefunden, die wir nutzen können.\nWollen wir das jetzt durchziehen?"
+                android:textColor="@color/turnoverAmountValue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 
     <TextView
@@ -20,13 +45,5 @@
         android:layout_marginLeft="278dp"
         android:textSize="35sp"
         android:text="pfff..." />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="338dp"
-        android:layout_marginLeft="84dp"
-        android:textSize="71sp"
-        android:text="Fertig!" />
 
 </FrameLayout>
