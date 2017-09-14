@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.transition.Fade;
+import android.transition.TransitionManager;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.yomo.templateapp.R;
@@ -35,11 +38,18 @@ public class SmartcheckActivity extends AppCompatActivity
         currentIndex = 0;
         done = false;
         relevant = SmartcheckUtils.getRelevantTransactions();
+
+        /*
+        ViewGroup v = (ViewGroup) findViewById(R.id.smartcheckLayout);
+        Fade mFade = new Fade(Fade.IN);
+
+        TransitionManager.beginDelayedTransition(v, mFade);
+        */
+
         loadNextFragment(currentIndex);
 
 		TextView cta = findViewById(R.id.cta);
-
-		FontUtils.getInstance().applyYOMOFont(cta, FontUtils.Type.SEMI_BOLD);
+        FontUtils.getInstance().applyYOMOFont(cta, FontUtils.Type.SEMI_BOLD);
 
 		cta.setOnClickListener(new View.OnClickListener() {
 			@Override
